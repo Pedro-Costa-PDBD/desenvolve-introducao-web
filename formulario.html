@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulário de satisfação</title>
+    </head>
+    <body>
+        <h1>Questionário - Satisfação</h1>
+        <p>Você responderá perguntas sobre o nível de satisfação que ficou ao vir em nosso estabelecimento.</p>
+        <dd><strong>Informações pessoais</strong></dd>
+        <form action="./filmes/formulario.txt" method="POST">
+            <p><label for="nome">Nome:</label></p>
+            <p><input type="text" placeholder="Seu nome" id="nome"/></p>
+            
+            <p><label for="email">E-mail:</label></p>
+            <p><input type="email" placeholder="Seu e-mail" id="email"/></p>
+
+            <p><label for="numero">Telefone:</label></p>
+            <p><input type="number" placeholder="(DDD)xxxxx-xxxx" id="numero"/></p>
+
+            <p><dd><strong>Pergunta 1</strong></dd></p>
+            <p>Qual nível de satisfação você ficou em relação ao atendimento, velocidade ao receber o pedido, sabor, humor e limpeza do
+            estabelecimento você ficou?</p>
+                <input type="radio" id="Horrivel" name="qualidade"/>
+                <label for="Horrivel">Horrível</label>
+
+                <input type="radio" id="mediano" name="qualidade"/>
+                <label for="mediano">Mediano</label>
+
+                <input type="radio" id="bom" name="qualidade"/>
+                <label for="bom">Bom</label>
+
+                <input type="radio" id="excelente" name="qualidade"/>
+                <label for="excelente">Excelente</label>
+
+            <p><dd><strong>Pergunta 2</strong></dd></p>
+            <p>Em uma escala de 0 a 10 quanto você recomendaria nosso estabelecimento para outras pessoas, como amigos e familiares? (sendo
+            0 como "nao recomendaria" e 10 como "recomendaria para todos")</p>
+                <p><input type="radio" id="0" name="aval"/>
+                <label for="0">0</label>
+                
+                <input type="radio" id="1" name="aval"/>
+                <label for="1">1</label>
+
+                <input type="radio" id="2" name="aval"/>
+                <label for="2">2</label></p>
+
+                <p><input type="radio" id="3" name="aval"/>
+                <label for="3">3</label>
+
+                <input type="radio" id="4" name="aval"/>
+                <label for="4">4</label>
+
+                <input type="radio" id="5" name="aval"/>
+                <label for="5">5</label></p>
+                    
+                <p><input type="radio" id="6" name="aval"/>
+                <label for="6">6</label>
+    
+                <input type="radio" id="7" name="aval"/>
+                <label for="7">7</label>
+    
+                <input type="radio" id="8" name="aval"/>
+                <label for="8">8</label></p>
+    
+                <p><input type="radio" id="9" name="aval"/>
+                <label for="9">9</label>
+
+                <input type="radio" id="10" name="aval"/>
+                <label for="10">10</label></p>
+
+                <p>
+                    <dd><strong>Pergunta 3</strong></dd>
+                    Qual dos nossos alimentos, você mais gostou?
+                <p>
+                    <select>
+                        <option>Hambúrguer</option>
+                        <option>Sanduíche de frango</option>
+                        <option>Milkshake</option>
+                        <option>Hot dog</option>
+                        <option>Nuggets de frango</option>
+                        <option>Salada de frutas</option>
+                        <option>Pizza fatiada</option>
+                        <option>Onion rings (anéis de cebola empanados)</option>
+                        <option>Torta salgada</option>
+                        <option>Esfiha</option>
+                        <option>Pão de queijo</option>
+                        <option>Tapioca recheada</option>
+                        <option>Churros</option>
+                        <option>Bolinho de bacalhau</option>
+                        <option>Sushi</option>
+                    </select>
+                </p>
+                </p>
+
+                <p>
+                    <strong>Obrigado</strong> por responder nosssas perguntas e fazer com que tenhamos um feedback sobre nosso
+                    estabelecimento. Após enviar, você ganhará um cupom para a próxima compra. Obrigado, e nos vemos novamente
+                    em breve.
+                </p>
+                <input type="checkbox" id="check"/>
+                <label for="check">Autorizo o compartilhamento de minhas respostas para terceiros.</label>
+
+                <p><input type="submit" value="Enviar"/></p>
+        </form>
+            
+    </body>
+</html>
