@@ -18,3 +18,26 @@ abbr { font-variant: small-caps;}
 #zen-summary { text-align: right;}
 
 .main p { line-height: 1.5;}
+
+header { background: black;}
+#titulo { color: bisque;}
+h1, h2 { display: inline-block;}
+h1 { margin: 1em;}
+
+.page-wrapper { 
+    width: 80%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.intro { height: 550px;}
+
+.design-archives { display: none;}
+
+aside ul { list-style-type: none;}
+aside ul li { text-align: center; margin: 1em;}
+
+footer {
+    margin: 4%;
+}
+footer a { border: solid 2px; padding: 0.5em;}
