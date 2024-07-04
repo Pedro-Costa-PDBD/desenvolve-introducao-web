@@ -1,0 +1,20 @@
+html { 
+    background: #C3DB91;
+    color: #2200DB;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.destaque { color: #DC0101;}
+
+p { font-size: 1em;}
+
+h1 { text-align: center; font-size: 1.8rem;}
+h2 { text-align: center; font-size: 1.4rem;}
+h3 { text-align: center; font-size: 1.2rem;}
+
+abbr { font-variant: small-caps;}
+
+#zen-summary { text-align: right;}
+
+.main p { line-height: 1.5;}
