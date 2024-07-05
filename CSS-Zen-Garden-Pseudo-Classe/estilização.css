@@ -1,0 +1,71 @@
+html { 
+    background: #C3DB91;
+    color: #2200DB;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.destaque { color: #DC0101;}
+
+p { font-size: 1em;}
+
+h1 { text-align: center; font-size: 1.8rem;}
+h2 { text-align: center; font-size: 1.4rem;}
+h3 { text-align: center; font-size: 1.2rem;}
+
+abbr { font-variant: small-caps;}
+
+#zen-summary { text-align: right;}
+
+.main p { line-height: 1.5;}
+
+header { background: black;}
+#titulo { color: bisque;}
+h1, h2 { display: inline-block;}
+h1 { margin: 1em;}
+
+.page-wrapper { 
+    width: 80%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.intro { height: 550px;}
+
+.design-archives { display: none;}
+
+aside ul { list-style-type: none;}
+aside ul li { text-align: center; margin: 1em;}
+
+footer {
+    margin: 4%;
+}
+footer a { border: solid 2px; padding: 0.5em;}
+
+.page-wrapper { position: relative;}
+
+.explanation { width: 60%; margin-right: 35%;}
+#zen-explanation { border-right: #1f295c 1px solid; padding: 2%;}
+
+#design-selection { position: absolute; top: 520px; left: 62%; padding-left: 1%; padding-right: 1%}
+#design-selection li { border-top: #1f295c solid 1px; padding-top: 3px;}
+#design-selection li:last-of-type {border-bottom: #1f295c solid 1px; padding-bottom: 3px;}
+
+
+footer { display: flex; justify-content: space-evenly;}
+
+#zen-benefits { display: flex;}
+#zen-benefits h3 { order: 2; align-self: center; flex-basis: 30%;}
+#zen-benefits p { flex-basis: 70%;}
+#zen-benefits { border-bottom: #1f295c solid 1px;}
+
+#zen-participation { display: flex; flex-wrap: wrap;}
+#zen-participation h3 { align-self: center;}
+.participation h3, .participation p { flex-basis: 50%;}
+#zen-participation { border-top: #1f295c solid 1px; border-bottom: #1f295c solid 1px;}
+
+a { font-weight: bold; color: #DC0101;}
+a:hover { color: #dc010169;}
+a:visited { font-weight: normal;}
+
+.main p:first-of-type::first-letter { font-size: 3em; font-family: 'Courier New'; float: left;}
