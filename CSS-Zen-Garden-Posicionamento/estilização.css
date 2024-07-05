@@ -1,0 +1,50 @@
+html { 
+    background: #C3DB91;
+    color: #2200DB;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.destaque { color: #DC0101;}
+
+p { font-size: 1em;}
+
+h1 { text-align: center; font-size: 1.8rem;}
+h2 { text-align: center; font-size: 1.4rem;}
+h3 { text-align: center; font-size: 1.2rem;}
+
+abbr { font-variant: small-caps;}
+
+#zen-summary { text-align: right;}
+
+.main p { line-height: 1.5;}
+
+header { background: black;}
+#titulo { color: bisque;}
+h1, h2 { display: inline-block;}
+h1 { margin: 1em;}
+
+.page-wrapper { 
+    width: 80%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.intro { height: 550px;}
+
+.design-archives { display: none;}
+
+aside ul { list-style-type: none;}
+aside ul li { text-align: center; margin: 1em;}
+
+footer {
+    margin: 4%;
+}
+footer a { border: solid 2px; padding: 0.5em;}
+
+.page-wrapper { position: relative;}
+
+.explanation { width: 60%; margin-right: 35%;}
+#zen-explanation { border-right: #1f295c 1px solid; padding: 2%;}
+
+#design-selection { position: absolute; top: 560px; left: 62%; padding-left: 2%; padding-right: 2%}
