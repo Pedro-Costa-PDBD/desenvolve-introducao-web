@@ -1,0 +1,114 @@
+.borda { width: 90%; max-width: 1280px; margin: auto;}
+/* sistema paralax das imagens de início de cada filme */
+div.paralax { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+div.paralax:after {
+    content:"";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 30%, #000 100%);
+    background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 30%, #000 100%);
+    background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 30%, #000 100%);
+    background: -o-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 30%, #000 100%);
+}
+div.paralax h1 { 
+    color: bisque;
+    text-align: center;
+    font-size: 60px;
+    z-index: 50;
+}
+div.paralax.primeiro { background-image: url(./IMG/MMF.jpg);}
+div.paralax.secundario { background-image: url(./IMG/MMF2.jpeg);}
+div.paralax.terceiro { background-image: url(./IMG/MMF3-2.webp);}
+div.paralax.quarto { background-image: url(./IMG/MMF4-2.jpg);}
+/* fim do sistema paralax */
+
+html { font-family: Arial, Helvetica, sans-serif; background: linear-gradient(45deg, orange, blue, yellow, blue, orange, blue, yellow, blue, orange);}
+h1, h2, h3 { font-family: 'Times New Roman', Times, serif;}
+h3 { text-align: center;}
+.h3 { text-align: left;}
+.main { position: relative;}
+.bilheteria1 { display: flex; position: absolute; top: 1037px; flex-wrap: wrap; flex-basis: 40%; left: 50%;}
+.producao2 { display:flex; position: absolute; top: 2670px; flex-wrap: wrap; flex-basis: 40%; left: 50%;}
+.elenco1, .elenco2, .elenco3, .elenco4 h3 { text-align: left;}
+.producao4 { display: flex; flex-wrap: wrap; max-width: 40%; background-color: #7e74ff;}
+.musica4 { display:flex; position: absolute; top: 6419px; flex-wrap: wrap; flex-basis: 40%; left: 50%; background-color: #7e74ff;}
+.marketing4 { display: flex; flex-wrap: wrap; max-width: 40%; background-color: #F2E530;}
+.lancamento4 { display:flex; position: absolute; top: 6747px; flex-wrap: wrap; flex-basis: 40%; left: 50%; background-color: #F2E530;}
+
+.sinopse, .analise1, .spin, .critica3 { background-color: #F2E530; margin-top: 0px; margin-bottom: 0px; padding-top: 10px; padding-bottom: 10px;}
+.elenco1, .elenco2, .elenco3, .elenco4 { background-color: #8b7f7c; margin-top: 0px; margin-bottom: 0px; padding-top: 10px; padding-bottom: 10px;}
+.enredo1, .enredo2, .enredo3, .enredo4, .bilheteria2, .bilheteria3 { background-color: #7e74ff; margin-top: 0px; margin-bottom: 0px; padding-top: 10px; padding-bottom: 10px;}
+
+.ajuste5 { height: 719px; width: 121.5px; display:flex; position: absolute; top: 6419px; left: 40%;}
+.ajuste6 { height: 130px; width: 607px; display:flex; position: absolute; top: 6635px; left: 50%;}
+header { background-color: #000; display: flex; justify-content: space-evenly; padding: 10px; border-radius: 10px; top: 0px;}
+header div p a { color: #F2E530; font-weight: 800;}
+.cabecalho { transition: transform 1.5s;}
+.cabecalho:hover { transform: scale(1.5, 1.6);}
+a { text-decoration: none;}
+footer { background-color: #000; padding: 150px; margin: 0px;}
+footer div p a { color: #F2E530; font-weight: 700;}
+.p { color: #F2E530;}
+.a:hover { color: rgb(255, 164, 243);}
+.foot2 { padding: 10px; display: flex; flex-direction: column; position: absolute; left: 25%; top: 7211px;}
+.foot3 { display: flex; flex-direction: column; position: absolute; top: 7220px; flex-wrap: wrap; left: 60%;}
+.foot3 p { text-align: center;}
+.foot4 { position: absolute; top: 7480px; left: 23%;}
+
+/* sistema do slide respondisvo da imagem dos personagens (ao lado de elenco3)*/
+.slide {
+    height: 320px;
+    width: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 4300px;
+    left: 45%;
+    box-shadow: 10px 10px 5px 0px rgba( 0, 0, 0, 0.75);
+}
+.slide .img8 img { width: 100%; height: 100%;}
+.navegacao { position: absolute; display: flex; bottom: 2475px; left: 63%;}
+.bar { width: 15px; height: 15px; border: 2px solid white; margin: 6px; border-radius: 15px; cursor: pointer; transform: .5s ease;}
+.bar:hover { background-color: white;}
+input {display: none;}
+.input { display: flex; width: 500%; height: 100%;}
+.img8 { width: 20%; transition: .6s;}
+#slide1:checked ~ .s1 { margin-left: 0%;}
+#slide2:checked ~ .s1 { margin-left: -20%;}
+#slide3:checked ~ .s1 { margin-left: -40%;}
+#slide4:checked ~ .s1 { margin-left: -60%;}
+#slide5:checked ~ .s1 { margin-left: -80%;}
+
+/* sistema de adaptação para celulares */
+@media screen and (max-width: 768px) {
+    .bilheteria1 { position: static; width: 100%; background-color: #7e74ff;}
+    .producao2 { position: static; width: 100%; background-color: #8b7f7c;}
+    .musica4 { position: static; width: 100%; background-color: #8b7f7c;}
+    .lancamento4 { position: static; width: 100%; background-color: #F2E530;}
+    .marketing4 { background-color: #7e74ff;}
+    .slide { position: static; width: 100%;}
+    .ajuste5 { display: none;}
+    .ajuste6 { display: none;}
+    .navegacao { position: static; width: 100%;}
+    .marketing4, .producao4 { position: static; width: 100%; max-width: 100%;}
+    .foot2, .foot3, .foot4 { position: static; width: 100%;}
+    .foot2, .foot3, .foot4 { text-align: center;}
+    footer { padding: 5px;}
+}
